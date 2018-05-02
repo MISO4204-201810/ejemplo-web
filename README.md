@@ -77,24 +77,24 @@ public class ServicioClima {
 En el `pom.xml` se tiene una dependencia a las librerías de Java EE.
 
 ```
-	<!--  Java EE 7 -->
-   <dependency>
-   		<groupId>javax</groupId>
-      <artifactId>javaee-api</artifactId>
-      <version>7.0</version>
-      <scope>provided</scope>
-	</dependency>
+<!--  Java EE 7 -->
+<dependency>
+	<groupId>javax</groupId>
+	<artifactId>javaee-api</artifactId>
+	<version>7.0</version>
+	<scope>provided</scope>
+</dependency>
 ```
 
 Con el fin de poder ejecutar el proyecto sin tener pre-instalado un servidor de aplicaciones, el `pom.xml` incluye un plugin de wildfly.
 
 ```
-	<!-- para ejecutar la aplicación en Wildfly -->
-   <plugin>
-		<groupId>org.wildfly.plugins</groupId>
-      <artifactId>wildfly-maven-plugin</artifactId>
-      <version>1.2.1.Final</version>
-	</plugin> 
+<!-- para ejecutar la aplicación en Wildfly -->
+<plugin>
+	<groupId>org.wildfly.plugins</groupId>
+	<artifactId>wildfly-maven-plugin</artifactId>
+	<version>1.2.1.Final</version>
+</plugin> 
 ```
 
 
